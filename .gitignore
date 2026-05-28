@@ -14,5 +14,9 @@ http-client.private.env.json
 .sonar/
 .scannerwork/
 
-# claude code
+# ---- Claude Code
 .claude/
+
+# ---- Environment Variables
+*.env
+
