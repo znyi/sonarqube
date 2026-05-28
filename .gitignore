@@ -1,0 +1,18 @@
+# ---- IntelliJ IDEA
+*.iws
+*.iml
+*.ipr
+.idea/
+.attach_pid*
+out/
+http-client.private.env.json
+
+# ---- VS Code
+*.code-workspace
+
+# ---- SonarQube
+.sonar/
+.scannerwork/
+
+# claude code
+.claude/
