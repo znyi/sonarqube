@@ -14,6 +14,7 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    restart: unless-stopped
   sonar:
     image: sonarqube:26.5.0.122743-community
     container_name: sonarqube_server
@@ -32,6 +33,7 @@ services:
       - sonarqube_data:/opt/sonarqube/data
       - sonarqube_logs:/opt/sonarqube/logs
       - sonarqube_extensions:/opt/sonarqube/extensions
+    restart: unless-stopped
 volumes:
   sonarqube_db_data:
   sonarqube_data:
