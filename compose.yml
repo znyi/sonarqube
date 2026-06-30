@@ -16,7 +16,7 @@ services:
       retries: 5
   sonar:
     image: sonarqube:26.5.0.122743-community
-    container_name: sonarqube_community
+    container_name: sonarqube_server
     depends_on:
       db:
         condition: service_healthy
