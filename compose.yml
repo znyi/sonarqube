@@ -30,6 +30,7 @@ services:
       - sonarqube_data:/opt/sonarqube/data
       - sonarqube_logs:/opt/sonarqube/logs
       - sonarqube_extensions:/opt/sonarqube/extensions
+      - ./sonar-cnes-report-5.0.4.jar:/opt/sonarqube/extensions/plugins/sonar-cnes-report-5.0.4.jar:ro
     ulimits:
       nofile:
         soft: 131072
